@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <!-- formulario para registro inicio de sesion -->
+    <section class="section">
+        <h1 class="title is-1">Sign up</h1>
+        <form action="/userCreate" method="post">
+            
+            <!-- <div class="field">
+              <label class="label">User</label>
+              <div class="control has-icons-left has-icons-right">
+                <input class="input" type="text" placeholder="User input">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                <span class="icon is-small is-right">
+                  <i class="fas fa-exclamation-triangle"></i>
+                </span>
+              </div>
+            </div> -->
+
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input" type="email" placeholder="Email input" name="email">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                </div>
+              </div>
+        
+              <div class="field">
+                <label class="label">Password</label>
+                <div class="control">
+                  <input class="input" type="password" placeholder="Password input" name="password">
+                </div>
+              </div>
+            
+              <div class="field is-grouped">
+                <div class="control">
+                    <input type="submit" class="button is-link" value="Sign up">
+                </div>
+              </div>
+
+        </form>
+
+        <div class="field">
+          Back to <a href="/"> log in</a>
+      </div>
+        
+    </section>
+      
+      
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+    <!-- formulario para registro inicio de sesion -->
+    <section class="section">
+        <h1 class="title is-1">Login</h1>
+        <form action="/login" method="post">
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input" type="email" placeholder="Email input" name="email">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                </div>
+              </div>
+        
+              <div class="field">
+                <label class="label">Password</label>
+                <div class="control">
+                  <input class="input" type="password" placeholder="Password" name="password">
+                </div>
+              </div>
+            
+              <div class="field is-grouped">
+                <div class="control">
+                    <input type="submit" class="button is-link" value="Log in">
+                </div>
+              </div>
+
+        </form>
+        <div class="field">
+            Need an account? <a href="/signUp"> Sign up</a>
+        </div>
+        
+    </section>
+      
+      
+{% endblock %}
